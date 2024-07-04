@@ -1,6 +1,6 @@
 ## Teste de Vaga Frontend Kronoos
 
-Para este teste, você deve criar uma aplicação React contendo 4 componentes do Shadcn customizados à sua escolha. Cada componente deve ser bem documentado no Storybook, incluindo todos os comportamentos e interações disponíveis. Além disso, você deve seguir as seguintes regras:
+Para este teste, você deve criar 4 componentes do Shadcn customizados à sua escolha. Cada componente deve ser bem documentado no Storybook, incluindo todos os comportamentos e interações disponíveis. Além disso, você deve seguir as seguintes regras:
 
 ### Tecnologias à serem utilizadas:
 * React
