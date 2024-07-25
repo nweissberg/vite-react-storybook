@@ -1,0 +1,80 @@
+:root {
+  --primary: #476d81ff;
+}
+
+.storybook-button {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  transition:
+    filter 150ms,
+    scale 50ms;
+}
+
+.storybook-button:focus:hover,
+.storybook-button:focus-visible:hover,
+[data-theme="dark"] .storybook-button:focus-visible:hover,
+[data-theme="dark"] .storybook-button:focus:hover {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.storybook-button:focus:hover:active,
+.storybook-button:focus-visible:hover:active,
+[data-theme="dark"] .storybook-button:focus-visible:hover:active,
+[data-theme="dark"] .storybook-button:focus:hover:active {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+.storybook-button:hover {
+  filter: brightness(1.5);
+}
+
+.storybook-button:active {
+  filter: brightness(0.8);
+  scale: 0.95;
+}
+
+[data-theme="dark"] {
+  background-color: #090703;
+}
+
+.storybook-button--primary {
+  color: black;
+  background-color: #1ea7fd;
+}
+
+[data-theme="dark"] .storybook-button--primary {
+  color: white;
+  background-color: #133950;
+}
+
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+
+[data-theme="dark"] .storybook-button--secondary {
+  color: #eee;
+  background-color: transparent;
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
