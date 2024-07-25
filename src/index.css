@@ -67,7 +67,7 @@ button:hover {
   :root {
     color: #213547;
     background-color: #ffffff;
-    --background: #fffa;
+    --background: #fffc;
     --line: #8884;
     --color: #222;
   }
@@ -83,7 +83,7 @@ button:hover {
   :root {
     color: #fff;
     background-color: #090e12;
-    --background: #151a1fdd;
+    --background: #151a1fcc;
     --color: #aaa;
     --line: #8884;
   }
@@ -99,8 +99,8 @@ code {
 
 @layer base {
   :root {
-    --chart-1: hsl(12, 76%, 61%);
-    --chart-2: hsl(173, 58%, 39%);
+    --chart-1: hsl(207, 82%, 38%);
+    --chart-2: hsl(341, 52%, 42%);
     --chart-3: hsl(197, 37%, 24%);
     --chart-4: hsl(43, 74%, 66%);
     --chart-5: hsl(27, 87%, 67%);
@@ -108,7 +108,7 @@ code {
 
   .dark {
     --chart-1: hsl(220, 70%, 50%);
-    --chart-2: hsl(160, 60%, 45%);
+    --chart-2: hsl(336, 60%, 45%);
     --chart-3: hsl(30, 80%, 55%);
     --chart-4: hsl(280, 65%, 60%);
     --chart-5: hsl(340, 75%, 55%);
@@ -123,6 +123,9 @@ code {
 
 .recharts-cartesian-grid > g > line {
   stroke: var(--line);
+}
+[data-theme="dark"] .recharts-default-tooltip > * > * {
+  filter: brightness(2);
 }
 .recharts-wrapper {
   border-radius: 23px;

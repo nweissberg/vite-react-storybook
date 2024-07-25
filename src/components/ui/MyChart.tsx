@@ -4,10 +4,10 @@ import { chartData } from "../../data/chartData";
 
 export function MyChart() {
   return (
-    <div className="chart-container">
+    <div className="chart-container justify-center flex m-4">
       <BarChart
-        width={600}
-        height={300}
+        width={400}
+        height={200}
         data={chartData}
         className="bg-transparent"
       >
@@ -15,8 +15,8 @@ export function MyChart() {
         <XAxis dataKey="month" />
         <Tooltip />
         <Legend />
-        <Bar dataKey="desktop" fill="var(--chart-1)" radius={4} />
-        <Bar dataKey="mobile" fill="var(--chart-2)" radius={4} />
+        <Bar dataKey="desktop" fill="var(--chart-1)" radius={20} />
+        <Bar dataKey="mobile" fill="var(--chart-2)" radius={20} />
       </BarChart>
     </div>
   );
