@@ -23,3 +23,6 @@ Para este teste, você deve criar 4 componentes do Shadcn customizados à sua es
 Assim que concluir o teste, retorne para nós informando a quantidade de horas trabalhadas no teste com o link do seu fork para que possamos visualizá-lo.
 
 Boa sorte!
+
+### Projeto:
+* [Live link](https://cronus-rhea.web.app/)

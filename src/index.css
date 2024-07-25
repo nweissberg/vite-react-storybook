@@ -18,7 +18,7 @@
   --background: #fffa;
   --color: #222;
   --line: #ddd;
-  --primary: #192a39;
+  --primary: #fff8;
 }
 
 a {
@@ -86,6 +86,7 @@ button:hover {
     --background: #151a1fcc;
     --color: #aaa;
     --line: #8884;
+    --primary: #0008;
   }
 }
 
@@ -117,6 +118,7 @@ code {
 
 .recharts-default-tooltip,
 .recharts-wrapper > svg > * {
+  transition: fill 200ms;
   fill: var(--line);
   background-color: var(--background) !important;
 }
