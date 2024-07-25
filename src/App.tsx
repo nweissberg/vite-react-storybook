@@ -5,6 +5,7 @@ import Nyco3D from "/Nyco3D.svg";
 import storybookLogo from "/storybook.svg";
 import { Button } from "./stories/Button";
 import "./App.css";
+import { MyChart } from "./components/ui/MyChart";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,6 +45,7 @@ function App() {
         </div>
       </div>
       <p className="read-the-docs">Click on a logo to explore</p>
+      <MyChart />
     </>
   );
 }
