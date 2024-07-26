@@ -6,7 +6,22 @@ import storybookLogo from "/storybook.svg";
 import { Button } from "./stories/Button";
 import "./App.css";
 import { MyChart } from "./components/ui/MyChart";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
+const firebase = initializeApp({
+  apiKey: import.meta.env.VITE_PUBLIC_FB_API_KEY,
+  authDomain: import.meta.env.VITE_PUBLIC_FB_AUTH_DOM,
+  projectId: import.meta.env.VITE_PUBLIC_FB_PROJ_ID,
+  storageBucket: import.meta.env.VITE_PUBLIC_FB_STORAGE,
+  messagingSenderId: import.meta.env.VITE_PUBLIC_FB_MESSAGE,
+  appId: import.meta.env.VITE_PUBLIC_FB_APP_ID,
+  measurementId: import.meta.env.VITE_PUBLIC_FB_MEASURE,
+});
+
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+getAnalytics(firebase);
 function App() {
   const [count, setCount] = useState(0);
 
